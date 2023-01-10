@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+hr{
+    color: #2c3e505e;
+    height: 0.01px;
+    margin-top: 2vh;
+}
+/* body{
+    
+} */
+nav{
+    background-color: #0082e6;
+    height: 60px;
+    width: 100%;
+    /* position: fixed; */
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    font-family: 'Moon Dance', cursive;
+    line-height: 60px;
+    padding: 0 50px;
+    font-weight: 800; 
+}
+nav ul{
+    float: right;
+    margin-right: 20px; 
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 7px 13px;
+    /* text-transform: uppercase; */
+} 
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+} 
+
+@media screen and (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+    img.profile{
+        float: none;
+        height: 250px;
+        margin-right: 0vw;
+    }
+    .container{
+        width: 90vw;
+        margin: auto;
+    }
+
+}
+
+@media screen and  (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background-color:#2c3e50 ;
+        top: 60px;
+        left:-100%;
+        padding-left: 25vw;
+        /* text-align: center; */
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 15px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+   
+}
+@media screen and (max-width: 650px) {
+    /* body {
+      background-color: lightgreen;
+    } */
+    div.container{
+        width: 95vw;
+    }
+    p.hello{
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
+        /* width: 70%; */
+    }
+    p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #2c3e50;
+        margin-top: 6px;
+    }
+    h1.name{
+        font-size: 40px;
+        font-family: 'Lobster', cursive;
+        color: #0082e6;
+        margin-top: 7px;
+    }
+    h2{
+        font-size: 20px;
+        font-family: 'Noto Serif Toto', serif;
+        color: navy;
+        margin-top: 5px;
+    }
+    img.aboutme{
+        display: none;
+    }
+    h1.aboutme{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    h3.tcet{
+        text-align: left;
+    }
+    img.tcetlogo{
+        display: none;
+    }
+    img.bamu{
+        display: none;
+    }
+    div.html{
+        width: 100%;
+        margin-top: 2vw;
+    }
+    h2.head{
+        text-align: center  ;
+    }
+    img.contact{
+        display: none;
+    }
+    li{
+        text-align: left;
+    }
+}
+
+a{
+    color: white;
+}
+/* Main Content */
+.container{
+    width: 75vw;
+    background-color:whitesmoke;
+    margin: auto;
+    padding: 5vw;
+}
+
+div.photo{
+    float: right;
+}
+p.hello{
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    /* width: 70%; */
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    font-size: 18px;
+    margin-top: 7px;
+}
+h1.name{
+    font-size: 44px;
+    font-family: 'Lobster', cursive;
+    color: #0082e6;
+    margin-top: 7px;
+    text-shadow: 2px 2px 2pxblack;
+}
+h2{
+    font-size: 24px;
+    font-family: 'Noto Serif Toto', serif;
+    color: navy;
+    margin-top: 5px;
+
+}
+img.profile{
+    height: 280px;
+    box-sizing: content-box;
+    right: 0%;
+    margin-left: 10vw;
+    margin-right: 4vw;
+    /* margin-top: 70px; */
+}
+button.resume{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #0082e6;
+    color: white;
+    border: 1px groove;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button.resume:hover{
+    box-shadow: 0px 0px 10px rgba(8, 63, 244, 0.5);
+    width: 220px;
+    height: 45px;
+}
+/* About Me */
+h1.aboutme{
+    font-size: 40px;
+    /* text-align: center; */
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 800;
+}
+h3{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    color: royalblue;
+    /* text-align: center; */
+    margin-top: 6px;
+}
+div.aboutimg{
+    width: 230px;
+    /* margin-right: 40vh; */
+}
+img.aboutme{
+    height: 230px;
+    /* width: 230px; */
+    /* background-color: antiquewhite; */
+    margin-right: 15vh;
+    margin-left: 5vh;
+}
+div.aboutinfo{
+    padding-top: 10px;
+} 
+div.aboutme{
+    display: flex;
+    padding-top: 5vh;
+    background-color: rgba(250, 235, 215, 0);
+    /* margin-top: 2vh; */
+}
+div.tcet{
+    display: flex;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 10px;
+    width: 88%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: 1px groove rgba(128, 0, 128, 0.13);
+}
+div.tcet:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+/* Education */
+img.tcetlogo{
+    width: 120px;
+    margin-right: 5vh;
+    margin-left: 2.5vh;
+}
+img.bamu{
+    width: 100px;
+    margin-right: 6.5vh;
+    margin-left: 4vh;
+}
+h3.tcet{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    color: green;
+    /* text-align: center; */
+    margin-top: 6px;
+}
+h1.edu{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 800;
+    margin-top: 2vh;
+}
+div.frontend{
+    width: 30%;
+    background-color: antiquewhite;
+}
+img.skills{
+    width: 150px;
+    margin-right: 5vh;
+    margin-left: 2.5vh;
+}
+div.technicalskills{
+    justify-content: center;
+    align-items: center;
+}
+div.html{
+    background-color: rgba(255, 228, 196, 0);
+    text-align: center;
+}
+div.webdev{
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: 12vw;
+}
+h2.head{
+    font-size: 24px;
+    font-family: 'Noto Serif Toto', serif;
+    color: rgb(128, 0, 70);
+    margin-top: 5px;
+    text-align: center;
+
+}
+div.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.amazon{
+    width: 380px;
+    padding: 10px;
+    background-color:rgba(235, 220, 225, 0.148);
+    border-radius: 10px;
+    border: 1px groove #2c3e5053;
+    /* margin-right: 2vh; */
+}
+div.amazon:hover{
+    width: 395px;
+    padding: 10px;
+    background-color: #08ecfc1c;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 1px groove #2c3e50c1;
+}
+img.proj{
+    width: 350px;
+}
+p.line{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    font-size: 18px;
+    margin-top: 7px;
+    text-align: center;
+}
+button.viewall{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: royalblue;
+    color: white;
+    border: 1px groove;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+button.viewall:hover{
+    width: 170px;
+    height: 50px;
+    font-size:22px;
+    background-color: #198754;
+    box-shadow: 0px 0px 10px rgba(102, 244, 8, 0.5);
+}
+img.contact{
+    width: 30vw;
+    margin-right: 10vh;
+}
+div.contact{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: antiquewhite; */
+}
+input.name{
+    width: 350px;
+    height: 5vh;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+input.email{
+    width: 350px;
+    height: 5vh;
+    font-size: 18px;
+    padding: 0px 10px;
+    margin-top: 2vh;
+}
+input.mobno{
+    width: 350px;
+    height: 5vh;
+    font-size: 18px;
+    padding: 0px 10px;
+    margin-top: 2vh;
+}
+input.message{
+    width: 350px;
+    height: 15vh;
+    font-size: 18px;
+    padding: 0px 10px;
+    margin-top: 4vh;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    padding-top: 2.5vh;
+}
+h2.foot{
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(249, 249, 136);
+    /* margin-top: 15px; */
+    text-align: center;
+
+}
+i#icon{
+    color:white;
+    margin-left: 1vh;
+}
+h4{
+    text-align: center;
+}
+li{
+    font-size: 20px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 4vh;
+    /* text-align: left; */
+    margin-top: 1vh;
+}
+h4{
+    font-size: 22px;
+    color: rgb(220, 212, 212);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+i#icon2{
+    color:rgb(246, 118, 118);
+    margin-left: 1vh;
+}
